@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계좌번호 복사</title>
+    <script>
+        function copyToClipboard() {
+            navigator.clipboard.writeText('22109851121768').then(function() {
+                alert('계좌번호가 복사되었습니다: 22109851121768');
+                window.close(); // 팝업 창 닫기
+            }, function(err) {
+                console.error('복사 실패: ', err);
+            });
+        }
+        window.onload = copyToClipboard; // 페이지 로드 시 자동 실행
+    </script>
+</head>
+<body>
+</body>
+</html>
